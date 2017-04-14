@@ -1,3 +1,23 @@
 name: Gregoire Michoud
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+
+scholar:
+  style: assets/bibliography/frontiers-in-marine-science.csl
+  locale: en
+
+  sort_by: year
+  order: descending
+  bibliography_list_tag: ul
+
+  source: _bibliography
+  bibliography: references
+  bibliography_template: bibliography
+
+  replace_strings: true
+
+  details_dir:    bibliography
+  details_layout: bibtex.html
+  details_link:   Details
+
+  query: "@*"
