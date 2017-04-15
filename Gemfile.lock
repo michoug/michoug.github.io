@@ -216,6 +216,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-scholar
+  minima
 
 BUNDLED WITH
    1.14.6

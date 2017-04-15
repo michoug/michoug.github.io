@@ -1,6 +1,14 @@
-name: Gregoire Michoud
+author: Gregoire Michoud
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+title: My Personal Website
+github_username:  michoug
+twitter_username:  GregoireMichoud
+theme: minima
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
 
 scholar:
   style: assets/bibliography/frontiers-in-marine-science.csl
