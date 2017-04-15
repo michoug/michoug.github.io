@@ -10,6 +10,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
+
 scholar:
   style: assets/bibliography/frontiers-in-marine-science.csl
   locale: en
