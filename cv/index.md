@@ -1,0 +1,7 @@
+---
+layout: default
+title: My CV
+---
+
+<h1>{{ page.title }}</h1>
+
