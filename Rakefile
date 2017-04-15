@@ -1,3 +1,31 @@
+desc "Recompile Sass"
+task :recompile_sass do
+  puts "\n## Forcing Sass to recompile"
+  status = system("touch -m assets/minima.scss")
+  puts status ? "Success" : "Failed"
+end
+
+namespace :build do
+  desc "Build _site/ for development"
+    task :dev => :recompile_sass do
+    puts "\n##  Starting Sass and Jekyll"
+    pids = [
+      spawn("sass --watch assets/minima.scss:assets/minima.css --sourcemap=none"),
+      spawn("jekyll serve -w")
+    ]
+
+    trap "INT" do
+      Process.kill "INT", *pids
+      exit 1
+    end
+
+    loop do
+      sleep 1
+    end
+  end
+end
+
+
 desc "Commit _site/"
 task :commit do
   puts "\n## Staging modified files"
