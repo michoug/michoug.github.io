@@ -6,6 +6,14 @@ excerpt:
 share: false
 ---
 
+### 2020
+
+{% bibliography --query @*[year=2020] %}
+
+### 2019
+
+{% bibliography --query @*[year=2019] %}
+
 ### 2018
 
 {% bibliography --query @*[year=2018] %}
